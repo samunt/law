@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-let jsPDF = require('jspdf');
-
 @Component({
   selector: 'app-pdf-json-parse',
   templateUrl: './pdf-json-parse.component.html',
@@ -10,6 +8,9 @@ let jsPDF = require('jspdf');
 export class PdfJsonParseComponent implements OnInit {
 
   constructor() {
+    // let require:any
+    let jsPDF = require('jspdf');
+
     let doc = new jsPDF();
     doc.text("Hello", 20, 20);
     doc.save('table.pdf');
