@@ -1,0 +1,28 @@
+.main-pdf-button {
+  width: 60%;
+  position: relative;
+  margin: 0 auto;
+  background-color: black;
+  border-radius: 10px;
+  border: 5px solid white;
+  height: 100px;
+  cursor: pointer;
+  color: white;
+  transition: background-color linear 0.5s;
+  transition: border-color linear 0.5s;
+  transition: color linear 0.5s;
+}
+
+.main-pdf-button:hover {
+  background-color: white;
+  border-color: black;
+  color: black;
+}
+
+.main-pdf-button p {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  line-height: 0px;
+  font-size: 50px;
+}
